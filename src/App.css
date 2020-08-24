@@ -1,8 +1,8 @@
-.App {
-  text-align: center;
-}
+/* .App {
+  text-align: center; 
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,15 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
