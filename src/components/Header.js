@@ -7,9 +7,7 @@ import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 
 
 const { SubMenu } = Menu;
-const HeaderWrapper = styled.div`
 
-`
 
 export default function Header(props) {
 
@@ -29,7 +27,7 @@ export default function Header(props) {
 
 
             <Row justify={'center'}>
-                <Col xs={24} sm={18}>
+                <Col xs={24} sm={16}>
                     {/* <HashRouter>
                         <Switch> */}
                     <HashRouter>
