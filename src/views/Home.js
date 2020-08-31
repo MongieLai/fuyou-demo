@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Row, Col } from 'antd';
 import { Carousel } from 'antd';
@@ -18,65 +18,35 @@ const carouselImgList = [
     '/carousel3.jfif'
 ]
 
-const getDoctor = () => {
-    return new Promise((resolve, reject) => {
-        // if (request) {
-        //     console.log(request)
-        //     resolve(response)
-        // } else {
-        //     this.message(() => {
-        //         reject(this.response)
-        //         const { title, info, img } = this.response
-        //         this.response.map((item, index) => {
-        //         })
-        //     })
-        // }
-    })
+class Header extends Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        return (
+            <div>
+                {/* <Carousel autoplay effect="fade" >
+                    {
+                        carouselImgList.map((item, index) => {
+                            return (
+                                <CarouselImg key={index} url={item}></CarouselImg>
+                            )
+                        })
+                    }
+                </Carousel> */}
+                {/* <Shortcut />
+                <NewsDynamic />
+
+                <InternetConsulting />
+                <ExpertRecommend />
+                <ClassRecommend />
+
+                <OrganizationNews /> */}
+
+            </div >
+        )
+    }
+
 }
 
-export default function Header(props) {
-    return (
-        <div>
-            <Row justify={'center'}>
-                <Col span={16} >
-                    <Carousel autoplay effect="fade" >
-                        {
-                            carouselImgList.map((item, index) => {
-                                return (
-                                    <CarouselImg key={index} url={item}></CarouselImg>
-                                )
-                            })
-                        }
-                    </Carousel>
-                </Col>
-            </Row>
-            <Shortcut></Shortcut>
-            <Row justify={'center'}>
-                <Col span={9}>
-                    <NewsDynamic />
-                </Col>
-                <Col span={6} offset={1}>
-                    <InternetConsulting />
-                </Col>
-            </Row>
-            <Row justify={'center'}>
-                <Col span={16}>
-                    <ExpertRecommend />
-                </Col>
-            </Row>
-            <Row justify={'center'}>
-                <Col span={9}>
-                    <ClassRecommend />
-                </Col>
-                <Col span={6} offset={1}>
-                    <OrganizationNews />
-                </Col>
-            </Row>
-            <div style={{ "height": `50px`, background: '#68c1ac' }}>
-
-            </div>
-            <img src='/LOGO-2.png'></img>
-        </div>
-
-    )
-}
+export default Header

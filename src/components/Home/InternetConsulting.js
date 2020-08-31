@@ -78,26 +78,25 @@ export default function InternetConsulting(props) {
         )
     }
     return (
-        <Row>
-            <Col span={24}>
-                <InternetTitle>
-                    <span>网络咨询</span>
-                </InternetTitle>
+        <div className="col-xs-12 col-sm-5">
+            <InternetTitle>
+                <span>网络咨询</span>
+            </InternetTitle>
 
-                <ServiceList>
-                    <ul>
-                        {
-                            ServiceListDetail.map((listItem, index) => {
-                                return (
-                                    <li onClick={notOpened} style={{ background: `url(${listItem.imgPath})`, backgroundSize: '100% 100%' }} key={index}>
-                                        <span>{listItem.title}</span>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </ServiceList>
-                {/* <LiWrapper>
+            <ServiceList>
+                <ul>
+                    {
+                        ServiceListDetail.map((listItem, index) => {
+                            return (
+                                <li onClick={notOpened} style={{ background: `url(${listItem.imgPath})`, backgroundSize: '100% 100%' }} key={index}>
+                                    <span>{listItem.title}</span>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </ServiceList>
+            {/* <LiWrapper>
                         {
                             newsList.map((newsItem, index) => {
                                 return (
@@ -111,7 +110,6 @@ export default function InternetConsulting(props) {
                             })
                         }
                     </LiWrapper> */}
-            </Col>
-        </Row>
+        </div>
     )
 }

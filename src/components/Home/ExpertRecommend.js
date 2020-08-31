@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { Tabs } from 'antd';
 import styled from 'styled-components'
 import { Row, Col } from 'antd';
-import { CaretRightOutlined, PushpinTwoTone } from '@ant-design/icons';
 const ExpertRecommendWrapper = styled.div`
     margin-top:20px;
 `
@@ -95,6 +94,7 @@ const subjectClassifyObj = [
     }
 ]
 
+//应该
 const doctorList =
 {
     name: '谢栩',

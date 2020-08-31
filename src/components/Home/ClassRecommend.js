@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { Tabs } from 'antd';
 import styled from 'styled-components'
 import { Row, Col } from 'antd';
-import { CaretRightOutlined, PushpinTwoTone } from '@ant-design/icons';
+import { CaretRightOutlined } from '@ant-design/icons';
 const ExpertRecommendWrapper = styled.div`
     margin-top:20px;
 `
@@ -121,7 +121,7 @@ export default function ClassRecommend(props) {
         setActiveItem(itemText)
         // const setInfo = useEffect()
     }
-    let i = 0
+
     return (
         <ExpertRecommendWrapper>
             <Row>
